@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Wallpapers</title>
     <style>
-        /*a{
-             display: block;
-        }*/
+        img{border-radius: 8px;}
+        #grad1{
+            background-color:rgb(28, 27, 27) ;
+             background: linear-gradient(to right, #0b486b, #f56217);
+        }
         .darkmodeimg{
             position: absolute;
             top: 55px;
             right: 60px;
+            
         }
         .darkmodscr
         {
@@ -34,8 +37,8 @@
             float: right;
         }
         .box1  {
-
-            background-color: rgb(242, 234, 234);
+            
+            background-color: lightgray;
             height: 70px;
             font-family: "Brush Script MT", cursive;
             text-align: center;
@@ -68,12 +71,12 @@
     <link rel="icon"  href="ab_icon.png">
 
 </head>
-<body style="background-color: rgb(28, 27, 27);">
+<body id="grad1">
     
     <div class="box1" > 
          
             <h1> <a href=" http://127.0.0.1:5500/index.html/index.html">WALLPAPERS</a></h1>
-            <img src="icon1.png" width="40" height="40" class="darkmodeimg" onclick="darkmod()">
+            <img src="icon1.png" width="40" height="40" class="darkmodeimg"  onclick="darkmod()">
     </div>
     <script>
         var isWhite=false;
@@ -87,7 +90,7 @@
         function darkmod(){
             
             if(isWhite){
-                document.body.style.background='rgb(28, 27, 27)';
+                document.body.style.background='linear-gradient(to right, #0b486b, #f56217)';
             }else{
                 document.body.style.background='rgb(205 193 197)';
                 border1=!border1;
@@ -102,7 +105,6 @@
         <a href="a.png">
         <img src="a.png" width="600" height="300">
         </a>
-        
     </div>
     <div class="pbox2" >
         <a href="b.png">
